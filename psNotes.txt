@@ -49,3 +49,10 @@ git clone COMMAND:
 		- by default will create a directory with the same name as the repository that's being called
 		- can be given a second argument that will be used as the name of the directory (git clone <path-to-repository-to-clone> new-directory-name)
 		- will create a new repository inside the current working directory
+
+git status COMMAND:
+	Command used to display the current status of the repository.
+	It will:
+		- display new files that have been created in the working directory that Git hasn't started tracking yet
+		- display files that Git is tracking that have been modified
+		- display other useful information depending on the state of the files, the working directory, and the repository
