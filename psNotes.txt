@@ -28,3 +28,15 @@ TERMINOLOGY
 	BRANCH:
 		When a new line of development is created that diverges from and without altering the main line of development.
 
+git init COMMAND:
+	Command used for creating a new repository in the current directory.
+	init stands for 'initialize'.
+	This command sets up all the necessary files and directories that Git will use to keep track of everything, which are stored in .git hidden directory.
+
+	.git Directory Contents:
+		- config file (where all project specific configuration settings are stored)
+		- description file (used for GitWeb program)
+		- hooks directory (where to place client-side or server-side scripts used to hook into Git's different lifecycle events)
+		- info directory (contains global excludes file)
+		- objects directory (stores all of the commits made)
+		- refs directory (holds pointers to commits, basically branches and tags)
