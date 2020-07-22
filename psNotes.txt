@@ -1,0 +1,30 @@
+TERMINOLOGY
+	VERSION CONTROL SYSTEM (VCS) / SOURCE CODE MANAGER (SCM):
+		A VCS is a tool that manages different versions of source code. A SCM is another name for version control system.
+		Git is a VSC.
+
+	COMMIT:
+		A snapshot of the saved state of the project in Git.
+		Every time you commit, Git basically takes a picture of what all the files look like at that moment and stores its reference.
+
+	REPOSITORY / REPO:
+		A directory which contains the project work, as well as few files used to communicate with Git.
+		It is made up of commits.
+
+	WOKRING DIRECTORY:
+		The files present in the the computer's file system.
+		This is different from the command line's concept of the current working directory.
+
+	CHECKOUT:
+		When content in the repository has been copied to the Working Directory.
+
+	STAGING AREA / STAGING INDEX / INDEX:
+		A file in the Git directory that stores information about what will go into the next commit.
+		Files in the staging area are assured to be committed or added to the Git repository.
+
+	SECURE HASH ALGORITHM (SHA):
+		A unique, 40-characters string, ID number for each commit.
+
+	BRANCH:
+		When a new line of development is created that diverges from and without altering the main line of development.
+
