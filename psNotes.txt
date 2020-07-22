@@ -40,3 +40,12 @@ git init COMMAND:
 		- info directory (contains global excludes file)
 		- objects directory (stores all of the commits made)
 		- refs directory (holds pointers to commits, basically branches and tags)
+
+git clone COMMAND:
+	Command used to create an identical copy of an existing repository.
+	syntax: git clone <path-to-repository-to-clone>
+	This command:
+		- takes the path to an existing repository
+		- by default will create a directory with the same name as the repository that's being called
+		- can be given a second argument that will be used as the name of the directory (git clone <path-to-repository-to-clone> new-directory-name)
+		- will create a new repository inside the current working directory
