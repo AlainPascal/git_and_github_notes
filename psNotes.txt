@@ -83,3 +83,4 @@ git add COMMAND:
 git commit COMMAND:
 	Command used to takes files from the staging index and saves them in the repository.
 	Running this command will open the code editor specified in your configuration. Inside the code editor, a commit message must be supplied, lines that start with a '#' are comments and will not be recorded, save the file after adding a commit message, close the editor to make the commit.
+	Keep commit messages short, consistent, and explain what the commit does.
