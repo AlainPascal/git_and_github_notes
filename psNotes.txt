@@ -80,7 +80,12 @@ git add COMMAND:
 	Syntax: git add <file1> <file2> ... <fileN>
 	This command takes a space-separated list of file names and adds them to the staging index.
 	Running git add . will stage the current directory and all nested files
+
 git commit COMMAND:
 	Command used to takes files from the staging index and saves them in the repository.
 	Running this command will open the code editor specified in your configuration. Inside the code editor, a commit message must be supplied, lines that start with a '#' are comments and will not be recorded, save the file after adding a commit message, close the editor to make the commit.
 	Keep commit messages short, consistent, and explain what the commit does.
+
+git diff COMMAND:
+	Command used to see changes that have been made but haven't been committed yet.
+	Running this command will display the files that have been modified, the location of the lines that have been added / removed, the actual changes that have been made.
