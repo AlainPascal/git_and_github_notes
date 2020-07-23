@@ -65,3 +65,12 @@ git log COMMAND:
 		- git log --stat (used to display the files that have been changed in the commit, as well as the number of lines that have been added or deleted). It also displays a summary line with the total number of modified files and lines that have been added / removed
 		- git log -p / --patch (used to display the files that have been modified, the location of the lines that have been added / removed, the actual changes that have been made)
 	Supply these commands with a commit's SHA to display information that start at that commit. (git log -p 8fd5759; git log --stat f226b38; git log --oneline 6617a39)
+
+git show COMMAND:
+	Command used to view information about a specific commit.
+	git show alone will display information about the most recent commit. Provide it with a commit's SHA to view information about that commit.
+	This command displays the commit, the author, the date, the commit message, and the patch information
+	git show FLAGS:
+		- git show --stat (shows how many files were changed and the number of line that were added / removed)
+		- git show -p / --patch (default display)
+		- git show -w (displays changes made and ignores changes to whitespace)
