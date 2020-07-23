@@ -56,3 +56,12 @@ git status COMMAND:
 		- display new files that have been created in the working directory that Git hasn't started tracking yet
 		- display files that Git is tracking that have been modified
 		- display other useful information depending on the state of the files, the working directory, and the repository
+
+git log COMMAND:
+	Command used to display all the commits of a repository.
+	By default, it displays the SHA, the author, the date, and the message of every commit in the repository. It can display a lot more information.
+	git log FLAGS:
+		- git log --oneline (used to alter how git log displays information). This command lists one commit per line, shows the first 7 characters of the commit's SHA, shows the commit's message
+		- git log --stat (used to display the files that have been changed in the commit, as well as the number of lines that have been added or deleted). It also displays a summary line with the total number of modified files and lines that have been added / removed
+		- git log -p / --patch (used to display the files that have been modified, the location of the lines that have been added / removed, the actual changes that have been made)
+	Supply these commands with a commit's SHA to display information that start at that commit. (git log -p 8fd5759; git log --stat f226b38; git log --oneline 6617a39)
