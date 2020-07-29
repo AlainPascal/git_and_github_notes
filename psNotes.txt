@@ -75,6 +75,7 @@ git show COMMAND:
 		- git show --stat (shows how many files were changed and the number of line that were added / removed)
 		- git show -p / --patch (default display)
 		- git show -w (displays changes made and ignores changes to whitespace)
+	Running git show <tag_name> will display annotated tag's information along with the commit that was created (running this on a lightweight tag will only display the commit's information)
 
 git add COMMAND:
 	Command used to move files from the working directory to the staging area.
