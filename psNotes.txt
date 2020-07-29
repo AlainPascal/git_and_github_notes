@@ -104,3 +104,13 @@ Relative Commit References:
 		To indicate the grandparent commit of the current commit (HEAD^^, HEAD~2)
 		To indicate the great-grandparent commit of the current commit (HEAD^^^, HEAD~3)
 	With a merge commit, the '^' reference is used to indicate the first parent (branch HEAD was pointing at when the merge was made) of the commit, while '^2' indicate the second parent (branch that was merged in).
+
+	git reset COMMAND:
+		Command used to erase (reset) commits.
+		Syntax: git reset <reference_to_commit>
+		It can be used to: move the HEAD and current branch pointer to the referenced commit; erase commits; move commited changes to the staging index; unstage commited changes
+		git reset FLAGS:
+			- git reset --mixed (unstage changes made after referenced commit, will take the changes and move them to the working directory) git reset by default
+			- git reset --soft (stage changes made after referenced commit, will take the changes and move them to the staging index)
+			- git reset --hard (erase changes made after referenced commit)
+		Always be careful while using this command.
