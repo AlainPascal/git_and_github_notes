@@ -87,3 +87,5 @@ git commit COMMAND:
 	git commit FLAGS:
 		- git commit -m "<commit_message>" (create a commit with inline commit message)
 		- git commit -a (add and commit all changed files, same as (git add .; git commit))
+		- git commit --amend (used to alter the most recent commit, provide a new commit message, add forgotten file(s) to commit. The code editor will open up and display the original commit message.)
+		To add forgotten file(s) to the recent commit: edit the file(s), save the file(s), stage the file(s), run git commit --amend to update the most recenct commit
