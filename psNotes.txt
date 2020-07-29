@@ -94,3 +94,16 @@ git diff COMMAND:
 	File used to tell Git about the files that Git should not track. This file should be placed in the same directory that the .git directory is in.
 	Git will not track files listed in .gitignore
 	Check out the concept of globbing on how to list multiple files in .gitignore at once
+
+git tag COMMAND:
+	Command used to add a marker on a specific commit. The tag does not move around as new commits are added.
+	Syntax: git tag -a <tag_name> (create an annotated tag wiith the -a flag)
+			git tag <tag_name> (create a lightweight tag)
+	Annotated tags are recommended because they include a lot of extra information (the person who made the tag, the date the tag was made, a message for the tag)
+	Running git tag will display all tags that are in the repository.
+	git tag FLAGS:
+		- git tag -a <tag_name> (creates an annotated tag)
+		- git tag -a <tag_name> -m <tag_message>(creates annotated tag and specifies a tagging message)
+		- git tag -d <tag_name> (deletes a tag from local repository)
+		- git tag -l / --list (lists the existing tags)
+	Specify the SHA to add a tag to a specific commit
