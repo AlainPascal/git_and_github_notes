@@ -89,3 +89,8 @@ git commit COMMAND:
 		- git commit -a (add and commit all changed files, same as (git add .; git commit))
 		- git commit --amend (used to alter the most recent commit, provide a new commit message, add forgotten file(s) to commit. The code editor will open up and display the original commit message.)
 		To add forgotten file(s) to the recent commit: edit the file(s), save the file(s), stage the file(s), run git commit --amend to update the most recenct commit
+	git revert COMMAND:
+		Command used to reverse a previously made commit.
+		Syntax: git revert <SHA_of_commit_to_revert>
+		This command will undo the changes that were made by the provided commit, then create a new commit to record the change.
+
