@@ -160,3 +160,12 @@ git checkout COMMAND:
 		- git checkout -f / --force (when switching branches, discards local changes)
 		- git checkout --orphan <branch_name> (create an orphan branch and switch to it)
 		- git checkout -B <branch_name> (create a branch and switch to it, if it already exists then reset it to the commit at which it starts)
+
+git remote COMMAND:
+	Command used to view and create remotes.
+	- git remote (show currently added remotes to the repository)
+	- git remote add <remote_name> <remote_url> (adds a remote repository). If there is only one remote, it's standard to name it 'origin'
+	- git remote -v / --verbose (shows the remote URL after its name)
+	- git remote rename <old_remote_name> <new_remote_name> (rename old_remote_name to new_remote_name)
+	- git remote remove / rm <remote_name> (remove remote <remote_name>. all remote-tracking branches and configurations settings for the remote are removed)
+	- git remote show <remote_name> (show more information about a particular remote)
