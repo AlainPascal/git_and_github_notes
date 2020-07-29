@@ -148,3 +148,14 @@ git merge COMMAND:
 		- >>>>>>> branch_name (the ending indicator of what's on the branch that's being merged in)
 		A file might have merge conflicts in multiple parts of the file, make sure to check the entire file for merge conflict indicators.
 	To resolve a merge conflict: choose which line(s) to keep, remove all lines with indicators, save the file, add it to the staging index and commit it.
+
+git checkout COMMAND:
+	Command used to switch between branches or restore working tree files.
+	It can also be used to switch between commits.
+	Running git checkout <SHA_of_commit> will make HEAD point to the specified commit (detached HEAD)
+	git checkout <branch_name> (switches to specified branch, HEAD point to <branch_name>)
+	git checkout FLAGS:
+		- git checkout -b <branch_name> (create a branch and switch to it)
+		- git checkout -f / --force (when switching branches, discards local changes)
+		- git checkout --orphan <branch_name> (create an orphan branch and switch to it)
+		- git checkout -B <branch_name> (create a branch and switch to it, if it already exists then reset it to the commit at which it starts)
