@@ -36,7 +36,7 @@ git init COMMAND:
 	.git Directory Contents:
 		- config file (where all project specific configuration settings are stored)
 		- description file (used for GitWeb program)
-		- hooks directory (where to place client-side or server-side scripts used to hook into Git's different lifecycle events)
+		- hooks directory (where to place client-side or server-side scripts used to hook into Git's different life cycle events)
 		- info directory (contains global excludes file)
 		- objects directory (stores all of the commits made)
 		- refs directory (holds pointers to commits, basically branches and tags)
@@ -64,7 +64,7 @@ git log COMMAND:
 		- git log --oneline (used to alter how git log displays information). This command lists one commit per line, shows the first 7 characters of the commit's SHA, shows the commit's message
 		- git log --stat (used to display the files that have been changed in the commit, as well as the number of lines that have been added or deleted). It also displays a summary line with the total number of modified files and lines that have been added / removed
 		- git log -p / --patch (used to display the files that have been modified, the location of the lines that have been added / removed, the actual changes that have been made)
-		- git log --decorate (displays more information on the log output such as tags, branhes as well as which branch HEAD is pointing to)
+		- git log --decorate (displays more information on the log output such as tags, branches as well as which branch HEAD is pointing to)
 		- git log --graph (add bullets and lines to the leftmost part of the output showing the actual branching that's happening)
 		- git log --all (displays log output with all the branches in the repository)
 	Supply these commands with a commit's SHA to display information that start at that commit. (git log -p 8fd5759; git log --stat f226b38; git log --oneline 6617a39)
@@ -101,7 +101,7 @@ git diff COMMAND:
 
 git tag COMMAND:
 	Command used to add a marker on a specific commit. The tag does not move around as new commits are added.
-	Syntax: git tag -a <tag_name> (create an annotated tag wiith the -a flag)
+	Syntax: git tag -a <tag_name> (create an annotated tag with the -a flag)
 			git tag <tag_name> (create a lightweight tag)
 	Annotated tags are recommended because they include a lot of extra information (the person who made the tag, the date the tag was made, a message for the tag)
 	Running git tag will display all tags that are in the repository.
@@ -113,7 +113,7 @@ git tag COMMAND:
 	Specify the SHA to add a tag to a specific commit
 
 git branch COMMAND:
-	Command used to intereact with Git's branches.
+	Command used to interact with Git's branches.
 	Running git branch will list out the branches in the repository and show the active branch.
 	A branch is used to do development or make a fix to the project that won't affect the project (since the changes are made on a branch)
 	Once the changes are made on the branch, it can be combined into the master branch (merging)
@@ -131,19 +131,19 @@ git merge COMMAND:
 	Syntax: git merge <name_of_branch_to_merge_in>
 	When a merge happens, Git will:
 		- look at the branches that it's going to merge
-		- look bak along the branch's history to find a single commit that both branches have in their commit history
+		- look back along the branch's history to find a single commit that both branches have in their commit history
 		- combine the lines of code that were changed on the separate branches together
 		- make a commit to record the merge
 	Two types of merges:
-		- Fast-forward merge (the branch being merged in must be ahead of the checked out branch. The cheked out branh's pointer will just be moved forward to point to the same commit as the other branch)
+		- Fast-forward merge (the branch being merged in must be ahead of the checked out branch. The checked out branch's pointer will just be moved forward to point to the same commit as the other branch)
 		- Regular merge (two different branches are combined; a merge commit is created)
 	Merge conflicts:
 		When a merge fails, it's called a merge conflict.
 		A merge conflict will happen when the exact same line(s) of a file is(are) changed in separate branches.
-		When a merge conflict occurs the merge output will show the word 'CONFLICT' and the file(s) in which the merge conflict occured (opening the file(s) in a code editor will show the merge conflict indicators)
+		When a merge conflict occurs the merge output will show the word 'CONFLICT' and the file(s) in which the merge conflict occurred (opening the file(s) in a code editor will show the merge conflict indicators)
 	Merge conflicts indicators:
 		- <<<<<< HEAD (everything below this line until the next indicator shows what's on the current branch)
-		- ||||||| some_message (everything below this line untill the next indicator shows what the original lines were)
+		- ||||||| some_message (everything below this line until the next indicator shows what the original lines were)
 		- ======= (the end of the original lines, everything that follows until the next indicator is what's on the branch that's being merged in)
 		- >>>>>>> branch_name (the ending indicator of what's on the branch that's being merged in)
 		A file might have merge conflicts in multiple parts of the file, make sure to check the entire file for merge conflict indicators.
