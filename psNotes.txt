@@ -109,3 +109,17 @@ git tag COMMAND:
 		- git tag -d <tag_name> (deletes a tag from local repository)
 		- git tag -l / --list (lists the existing tags)
 	Specify the SHA to add a tag to a specific commit
+
+git branch COMMAND:
+	Command used to intereact with Git's branches.
+	Running git branch will list out the branches in the repository and show the active branch.
+	A branch is used to do development or make a fix to the project that won't affect the project (since the changes are made on a branch)
+	Once the changes are made on the branch, it can be combined into the master branch (merging)
+	Syntax: - git branch <branch_name> (creates a branch)
+			- git branch <branch_name> <commit_SHA> (creates a branch and have it point to the specified commit's SHA)
+			- git branch -d <branch_name> (deletes a branch once changes have been merged)
+			- git branch -D <branch_name> (forces deletion of a branch)
+	Git will not delete a branch if HEAD is currently pointing to it.
+	Git will not delete a branch if it has commits on it that aren't on any other branch.
+	To switch between branches, use git checkout <branch_name> command
+	Running git checkout -b <branch_name> will create a branch and switch to it a the same time (git branch <branch_name>; git checkout <branch_name>). Look out for more information on git checkout COMMAND.
