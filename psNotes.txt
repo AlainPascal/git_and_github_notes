@@ -92,3 +92,4 @@ git diff COMMAND:
 	git diff alone will compare changes made between the working directory and the staging index.
 	This command can also be used to compare and see changes made between commits.
 	Running git diff <SHA_first_commit> <SHA_second_commit> will compare changes made between the specified commits.
+	Running git diff --staged will compare changes made between the staging area and the most recent commit.
