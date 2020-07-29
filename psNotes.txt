@@ -94,3 +94,13 @@ git commit COMMAND:
 		Syntax: git revert <SHA_of_commit_to_revert>
 		This command will undo the changes that were made by the provided commit, then create a new commit to record the change.
 
+Relative Commit References:
+	Reference a commit relative to another commit.
+	Ancestry References (special characters used to tell Git about these relative references):
+		- '^' (indicates the parent commit)
+		- '~' (indicates the first parent commit)
+	How to refer to previous commits:
+		To indicate the parent commit of the current commit (HEAD^, HEAD~, HEAD~1)
+		To indicate the grandparent commit of the current commit (HEAD^^, HEAD~2)
+		To indicate the great-grandparent commit of the current commit (HEAD^^^, HEAD~3)
+	With a merge commit, the '^' reference is used to indicate the first parent (branch HEAD was pointing at when the merge was made) of the commit, while '^2' indicate the second parent (branch that was merged in).
