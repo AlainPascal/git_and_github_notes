@@ -36,7 +36,7 @@ git init COMMAND:
 	.git Directory Contents:
 		- config file (where all project specific configuration settings are stored)
 		- description file (used for GitWeb program)
-		- hooks directory (where to place client-side or server-side scripts used to hook into Git's different lifecycle events)
+		- hooks directory (where to place client-side or server-side scripts used to hook into Git's different life cycle events)
 		- info directory (contains global excludes file)
 		- objects directory (stores all of the commits made)
 		- refs directory (holds pointers to commits, basically branches and tags)
@@ -88,7 +88,7 @@ git commit COMMAND:
 		- git commit -m "<commit_message>" (create a commit with inline commit message)
 		- git commit -a (add and commit all changed files, same as (git add .; git commit))
 		- git commit --amend (used to alter the most recent commit, provide a new commit message, add forgotten file(s) to commit. The code editor will open up and display the original commit message.)
-		To add forgotten file(s) to the recent commit: edit the file(s), save the file(s), stage the file(s), run git commit --amend to update the most recenct commit
+		To add forgotten file(s) to the recent commit: edit the file(s), save the file(s), stage the file(s), run git commit --amend to update the most recent commit
 	git revert COMMAND:
 		Command used to reverse a previously made commit.
 		Syntax: git revert <SHA_of_commit_to_revert>
@@ -108,7 +108,7 @@ Relative Commit References:
 	git reset COMMAND:
 		Command used to erase (reset) commits.
 		Syntax: git reset <reference_to_commit>
-		It can be used to: move the HEAD and current branch pointer to the referenced commit; erase commits; move commited changes to the staging index; unstage commited changes
+		It can be used to: move the HEAD and current branch pointer to the referenced commit; erase commits; move committed changes to the staging index; unstage committed changes
 		git reset FLAGS:
 			- git reset --mixed (unstage changes made after referenced commit, will take the changes and move them to the working directory) git reset by default
 			- git reset --soft (stage changes made after referenced commit, will take the changes and move them to the staging index)
