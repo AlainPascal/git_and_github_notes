@@ -90,3 +90,5 @@ git diff COMMAND:
 	Command used to see changes that have been made but haven't been committed yet.
 	Running this command will display the files that have been modified, the location of the lines that have been added / removed, the actual changes that have been made.
 	git diff alone will compare changes made between the working directory and the staging index.
+	This command can also be used to compare and see changes made between commits.
+	Running git diff <SHA_first_commit> <SHA_second_commit> will compare changes made between the specified commits.
