@@ -36,7 +36,7 @@ git init COMMAND:
 	.git Directory Contents:
 		- config file (where all project specific configuration settings are stored)
 		- description file (used for GitWeb program)
-		- hooks directory (where to place client-side or server-side scripts used to hook into Git's different lifecycle events)
+		- hooks directory (where to place client-side or server-side scripts used to hook into Git's different life cycle events)
 		- info directory (contains global excludes file)
 		- objects directory (stores all of the commits made)
 		- refs directory (holds pointers to commits, basically branches and tags)
