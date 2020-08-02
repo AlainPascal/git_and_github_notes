@@ -169,3 +169,13 @@ git remote COMMAND:
 	- git remote rename <old_remote_name> <new_remote_name> (rename old_remote_name to new_remote_name)
 	- git remote remove / rm <remote_name> (remove remote <remote_name>. all remote-tracking branches and configurations settings for the remote are removed)
 	- git remote show <remote_name> (show more information about a particular remote)
+
+git push COMMAND:
+	Command used to upload local repository content to a remote repository.
+	This is how you transfer commits from local repository to a remote repository.
+	- git push <remote_name> <local_branch_to_push> (pushes the specified local branch to the specified remote along with all the necessary commits and internal objects)
+	- git push <remote_name> -f / --force (forces the push even if it results in a non-fast-forward merge. Use it with care)
+	- git push <remote_name> --all (pushes all local branches to the specified remote)
+	- git push <remote_name> --tags (pushes all local tags to the remote)
+	- git push <remote_name> -d / --delete <remote_branch_name> (deletes specified remote branch from specified remote)
+	- git push <remote_name> --prune <remote_branch_name> (removes specified remote branch from specified remote if a local branch with the same name does not exist anymore)
