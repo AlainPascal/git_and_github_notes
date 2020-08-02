@@ -183,3 +183,17 @@ git push COMMAND:
 git pull COMMAND:
 	Command used to fetch and download content from a remote repository and update the local repo to match that content.
 	- git pull <remote_name> <remote_branch_name> (pulls content from specified remote branch on specified remote into local repository)
+
+	git pull <remote_name> <remote_branch_name> = git fetch <remote_name>/<remote_branch_name> ; git merge <local_branch_name> <remote_name>/<remote_branch_name>
+
+git fetch COMMAND:
+	Command used to update local copy of remote repository.
+	This is used when there are changes on remote repository but have not been added to the local copy of the remote.
+	Mostly used when changes have been made both on the local repository and on the remote repository.
+	- git fetch <remote_name> (updates all local copies for every remote branch on specified remote)
+	- git fetch <remote_name> <remote_branch_name> (updates local copy of specified remote branch on local remote)
+	- git fetch --all (updates all local remotes and their branches)
+	- git fetch --dry-run (performs a demo run of the command. Show what would be done during the fetch without making any changes)
+	Local copies of remote branches are specified by <remote_name>/<remote_branch_name>
+	After updating local copies for remote branches of local remote, they can be merged with local branches of local repository by running git merge local_branch_name <remote_name>/<remote_branch_name>
+	And then push changes to the remote repository by running git push <remote_name> <branch_name_to_push>
