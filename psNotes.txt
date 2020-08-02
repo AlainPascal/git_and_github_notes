@@ -179,3 +179,7 @@ git push COMMAND:
 	- git push <remote_name> --tags (pushes all local tags to the remote)
 	- git push <remote_name> -d / --delete <remote_branch_name> (deletes specified remote branch from specified remote)
 	- git push <remote_name> --prune <remote_branch_name> (removes specified remote branch from specified remote if a local branch with the same name does not exist anymore)
+
+git pull COMMAND:
+	Command used to fetch and download content from a remote repository and update the local repo to match that content.
+	- git pull <remote_name> <remote_branch_name> (pulls content from specified remote branch on specified remote into local repository)
