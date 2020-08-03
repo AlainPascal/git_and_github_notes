@@ -90,6 +90,37 @@ git commit COMMAND:
 	Command used to takes files from the staging index and saves them in the repository.
 	Running this command will open the code editor specified in your configuration. Inside the code editor, a commit message must be supplied, lines that start with a '#' are comments and will not be recorded, save the file after adding a commit message, close the editor to make the commit.
 	Keep commit messages short, consistent, and explain what the commit does.
+	git commit FLAGS:
+		- git commit -m "<commit_message>" (create a commit with inline commit message)
+		- git commit -a (add and commit all changed files, same as (git add .; git commit))
+		- git commit --amend (used to alter the most recent commit, provide a new commit message, add forgotten file(s) to commit. The code editor will open up and display the original commit message.)
+		To add forgotten file(s) to the recent commit: edit the file(s), save the file(s), stage the file(s), run git commit --amend to update the most recent commit
+	
+	git revert COMMAND:
+		Command used to reverse a previously made commit.
+		Syntax: git revert <SHA_of_commit_to_revert>
+		This command will undo the changes that were made by the provided commit, then create a new commit to record the change.
+
+Relative Commit References:
+	Reference a commit relative to another commit.
+	Ancestry References (special characters used to tell Git about these relative references):
+		- '^' (indicates the parent commit)
+		- '~' (indicates the first parent commit)
+	How to refer to previous commits:
+		To indicate the parent commit of the current commit (HEAD^, HEAD~, HEAD~1)
+		To indicate the grandparent commit of the current commit (HEAD^^, HEAD~2)
+		To indicate the great-grandparent commit of the current commit (HEAD^^^, HEAD~3)
+	With a merge commit, the '^' reference is used to indicate the first parent (branch HEAD was pointing at when the merge was made) of the commit, while '^2' indicate the second parent (branch that was merged in).
+
+	git reset COMMAND:
+		Command used to erase (reset) commits.
+		Syntax: git reset <reference_to_commit>
+		It can be used to: move the HEAD and current branch pointer to the referenced commit; erase commits; move committed changes to the staging index; unstage committed changes
+		git reset FLAGS:
+			- git reset --mixed (unstage changes made after referenced commit, will take the changes and move them to the working directory) git reset by default
+			- git reset --soft (stage changes made after referenced commit, will take the changes and move them to the staging index)
+			- git reset --hard (erase changes made after referenced commit)
+				Always be careful while using this command.
 
 git diff COMMAND:
 	Command used to see changes that have been made but haven't been committed yet.
