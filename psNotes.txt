@@ -125,6 +125,10 @@ Relative Commit References:
 git diff COMMAND:
 	Command used to see changes that have been made but haven't been committed yet.
 	Running this command will display the files that have been modified, the location of the lines that have been added / removed, the actual changes that have been made.
+	git diff alone will compare changes made between the working directory and the staging index.
+	This command can also be used to compare and see changes made between commits.
+	Running git diff <SHA_first_commit> <SHA_second_commit> will compare changes made between the specified commits.
+	Running git diff --staged will compare changes made between the staging area and the most recent commit.
 
 .gitignore FILE:
 	File used to tell Git about the files that Git should not track. This file should be placed in the same directory that the .git directory is in.
