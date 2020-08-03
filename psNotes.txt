@@ -184,6 +184,8 @@ git merge COMMAND:
 		- >>>>>>> branch_name (the ending indicator of what's on the branch that's being merged in)
 		A file might have merge conflicts in multiple parts of the file, make sure to check the entire file for merge conflict indicators.
 	To resolve a merge conflict: choose which line(s) to keep, remove all lines with indicators, save the file, add it to the staging index and commit it.
+	git merge FLAGS:
+		- git merge --abort (restore the files to their state before the merge started)
 
 git checkout COMMAND:
 	Command used to switch between branches or restore working tree files.
