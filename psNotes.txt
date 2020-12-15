@@ -234,3 +234,17 @@ git fetch COMMAND:
 	Local copies of remote branches are specified by <remote_name>/<remote_branch_name>
 	After updating local copies for remote branches of local remote, they can be merged with local branches of local repository by running git merge local_branch_name <remote_name>/<remote_branch_name>
 	And then push changes to the remote repository by running git push <remote_name> <branch_name_to_push>
+
+WRITING READMEs
+	Anatomy of READMEs:
+		A README should provide just enough context to get a user up and running with the code.
+		Communicate clearly and concisely any information that is essential for the user.
+		- Title and Description (capture the spirit of your project clearly and concisely; the project's logo could also be included)
+		- Any information that is absolutely necessary for understanding the code: i.e. dependencies on the software libraries, installation instructions, common usage, known bugs
+
+		There is no formal standard for what a README should look like.
+
+		Quick questions to ask oneself when writing READMEs include:
+			- What steps need to be taken?
+			- What should the user already have installed or configured?
+			- What might hey have a hard time understanding right away?
