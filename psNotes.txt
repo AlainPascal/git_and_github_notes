@@ -252,3 +252,16 @@ WRITING READMEs
 	No matter how large or small the project, include copyright or licensing information when allowing others to contribute to the project.
 	Choose to include the full license in the README or link out to it from the README.
 	Include in the README preferred ways for others to contribute to the project.
+
+	Readable READMEa with Markdown:
+		Markdown is a light language often used for READMEs. it lets you generate well formatted READMEs by tranSlating them into HTML
+		GitHub combines a syntax of formatting text called GitHub Flavored Markdown with a few unique features. 
+		Basic Markdown Syntax:
+			- to make text bold, surround it with double asterisks ( **this in bold**)
+			- to italicize text, surround it with underscores (_this in italic_)
+			- to indicate text as an inline code, surround it in backticks (`inline code`)
+			- for title sequence i.e. h1 through h6, include a # before the text. the number of #s you include tells which header tag being used (# this is h1; ## this is h2; ### this is h3)
+		Explore more ways to write beautiful READMEs on https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/getting-started-with-writing-and-formatting-on-github
+
+		Markdown files should be saved with a .md extension. files could be previewed by Dillinger (https://dillinger.io) online markdown editor
+	
