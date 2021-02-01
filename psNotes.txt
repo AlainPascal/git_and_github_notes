@@ -151,8 +151,8 @@ git tag COMMAND:
 git branch COMMAND:
 	Command used to interact with Git's branches.
 	Running git branch will list out the branches in the repository and show the active branch.
-	A branch is used to do development or make a fix to the project that won't affect the project (since the changes are made on a branch)
-	Once the changes are made on the branch, it can be combined into the master branch (merging)
+	A branch is used to do development or make a fix to the project that won't affect the project (since the changes are made on a branch).
+	Once the changes are made on the branch, it can be combined into the master branch (merging).
 	Syntax: - git branch <branch_name> (creates a branch)
 			- git branch <branch_name> <commit_SHA> (creates a branch and have it point to the specified commit's SHA)
 			- git branch -d <branch_name> (deletes a branch once changes have been merged)
