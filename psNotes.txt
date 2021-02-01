@@ -253,7 +253,7 @@ WRITING READMEs
 	Choose to include the full license in the README or link out to it from the README.
 	Include in the README preferred ways for others to contribute to the project.
 
-	Readable READMEa with Markdown:
+	Readable READMEs with Markdown:
 		Markdown is a light language often used for READMEs. it lets you generate well formatted READMEs by tranSlating them into HTML
 		GitHub combines a syntax of formatting text called GitHub Flavored Markdown with a few unique features. 
 		Basic Markdown Syntax:
