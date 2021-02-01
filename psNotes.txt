@@ -163,7 +163,7 @@ git branch COMMAND:
 	Running git checkout -b <branch_name> will create a branch and switch to it a the same time (git branch <branch_name>; git checkout <branch_name>). Look out for more information on git checkout COMMAND.
 
 git merge COMMAND:
-	Command used to combine Git branches
+	Command used to combine Git branches.
 	Syntax: git merge <name_of_branch_to_merge_in>
 	When a merge happens, Git will:
 		- look at the branches that it's going to merge
