@@ -263,5 +263,5 @@ WRITING READMEs
 			- for title sequence i.e. h1 through h6, include a # before the text. The number of #s you include tells which header tag being used (# this is h1; ## this is h2; ### this is h3)
 		Explore more ways to write beautiful READMEs on https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/getting-started-with-writing-and-formatting-on-github
 
-		Markdown files should be saved with a .md extension. Files could be previewed by Dillinger (https://dillinger.io) online markdown editor
+		Markdown files should be saved with a .md extension. Files could be previewed by Dillinger (https://dillinger.io) online markdown editor,
 	
