@@ -146,7 +146,7 @@ git tag COMMAND:
 		- git tag -a <tag_name> -m <tag_message> (creates annotated tag and specifies a tagging message)
 		- git tag -d <tag_name> (deletes a tag from local repository)
 		- git tag -l / --list (lists the existing tags)
-	Specify the SHA to add a tag to a specific commit
+	Specify the SHA to add a tag to a specific commit.
 
 git branch COMMAND:
 	Command used to interact with Git's branches.
