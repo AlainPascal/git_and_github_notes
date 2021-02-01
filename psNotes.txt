@@ -132,8 +132,8 @@ git diff COMMAND:
 
 .gitignore FILE:
 	File used to tell Git about the files that Git should not track. This file should be placed in the same directory that the .git directory is in.
-	Git will not track files listed in .gitignore
-	Check out the concept of globbing on how to list multiple files in .gitignore at once
+	Git will not track files listed in .gitignore.
+	Check out the concept of globbing on how to list multiple files in .gitignore at once.
 
 git tag COMMAND:
 	Command used to add a marker on a specific commit. The tag does not move around as new commits are added.
