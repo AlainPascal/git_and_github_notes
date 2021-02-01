@@ -139,7 +139,7 @@ git tag COMMAND:
 	Command used to add a marker on a specific commit. The tag does not move around as new commits are added.
 	Syntax: git tag -a <tag_name> (create an annotated tag with the -a flag)
 			git tag <tag_name> (create a lightweight tag)
-	Annotated tags are recommended because they include a lot of extra information (the person who made the tag, the date the tag was made, a message for the tag)
+	Annotated tags are recommended because they include a lot of extra information (the person who made the tag, the date the tag was made, a message for the tag).
 	Running git tag will display all tags that are in the repository.
 	git tag FLAGS:
 		- git tag -a <tag_name> (creates an annotated tag)
