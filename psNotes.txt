@@ -260,7 +260,7 @@ WRITING READMEs
 			- to make text bold, surround it with double asterisks ( **this in bold**)
 			- to italicize text, surround it with underscores (_this in italic_)
 			- to indicate text as an inline code, surround it in backticks (`inline code`)
-			- for title sequence i.e. h1 through h6, include a # before the text. the number of #s you include tells which header tag being used (# this is h1; ## this is h2; ### this is h3)
+			- for title sequence i.e. h1 through h6, include a # before the text. The number of #s you include tells which header tag being used (# this is h1; ## this is h2; ### this is h3)
 		Explore more ways to write beautiful READMEs on https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/getting-started-with-writing-and-formatting-on-github
 
 		Markdown files should be saved with a .md extension. files could be previewed by Dillinger (https://dillinger.io) online markdown editor
