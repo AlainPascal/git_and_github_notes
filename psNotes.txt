@@ -190,7 +190,7 @@ git merge COMMAND:
 git checkout COMMAND:
 	Command used to switch between branches or restore working tree files.
 	It can also be used to switch between commits.
-	Running git checkout <SHA_of_commit> will make HEAD point to the specified commit (detached HEAD)
+	Running git checkout <SHA_of_commit> will make HEAD point to the specified commit (detached HEAD).
 	git checkout <branch_name> (switches to specified branch, HEAD point to <branch_name>)
 	git checkout FLAGS:
 		- git checkout -b <branch_name> (create a branch and switch to it)
