@@ -159,7 +159,7 @@ git branch COMMAND:
 			- git branch -D <branch_name> (forces deletion of a branch)
 	Git will not delete a branch if HEAD is currently pointing to it.
 	Git will not delete a branch if it has commits on it that aren't on any other branch.
-	To switch between branches, use git checkout <branch_name> command
+	To switch between branches, use git checkout <branch_name> command.
 	Running git checkout -b <branch_name> will create a branch and switch to it a the same time (git branch <branch_name>; git checkout <branch_name>). Look out for more information on git checkout COMMAND.
 
 git merge COMMAND:
