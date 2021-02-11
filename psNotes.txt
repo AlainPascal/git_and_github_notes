@@ -68,7 +68,7 @@ git log COMMAND:
 		- git log --graph (add bullets and lines to the leftmost part of the output showing the actual branching that's happening)
 		- git log --all (displays log output with all the branches in the repository)
 	Supply these commands with a commit's SHA to display information that start at that commit. (git log -p 8fd5759; git log --stat f226b38; git log --oneline 6617a39)
-	Supply these commands as well with branches name to display information about the branches. (git log --oneline --graph branch_one branch_two)
+	Supply these commands as well with branches names to display information about the branches. (git log --oneline --graph branch_one branch_two)
 
 git show COMMAND:
 	Command used to view information about a specific commit.
