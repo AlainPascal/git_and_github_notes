@@ -84,7 +84,7 @@ git add COMMAND:
 	Command used to move files from the working directory to the staging area.
 	Syntax: git add <file1> <file2> ... <fileN>
 	This command takes a space-separated list of file names and adds them to the staging index.
-	Running git add . will stage the current directory and all nested files
+	Running 'git add .' will stage the current directory and all nested files.
 
 git commit COMMAND:
 	Command used to take files from the staging index and save them in the repository.
