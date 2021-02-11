@@ -247,7 +247,7 @@ WRITING READMEs
 		Quick questions to ask oneself when writing READMEs include:
 			- What steps need to be taken?
 			- What should the user already have installed or configured?
-			- What might hey have a hard time understanding right away?
+			- What might they have a hard time understanding right away?
 
 	No matter how large or small the project, include copyright or licensing information when allowing others to contribute to the project.
 	Choose to include the full license in the README or link out to it from the README.
