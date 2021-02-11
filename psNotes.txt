@@ -176,7 +176,7 @@ git merge COMMAND:
 	Merge conflicts:
 		When a merge fails, it's called a merge conflict.
 		A merge conflict will happen when the exact same line(s) of a file is(are) changed in separate branches.
-		When a merge conflict occurs the merge output will show the word 'CONFLICT' and the file(s) in which the merge conflict occurred (opening the file(s) in a code editor will show the merge conflict indicators)
+		When a merge conflict occurs the merge output will show the word 'CONFLICT' and the file(s) in which the merge conflict occurred (opening the file(s) in a code editor will show the merge conflict indicators).
 	Merge conflicts indicators:
 		- <<<<<< HEAD (everything below this line until the next indicator shows what's on the current branch)
 		- ||||||| some_message (everything below this line until the next indicator shows what the original lines were)
