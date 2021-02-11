@@ -73,7 +73,7 @@ git log COMMAND:
 git show COMMAND:
 	Command used to view information about a specific commit.
 	git show alone will display information about the most recent commit. Provide it with a commit's SHA to view information about that commit.
-	This command displays the commit, the author, the date, the commit message, and the patch information
+	This command displays the commit, the author, the date, the commit message, and the patch information.
 	git show FLAGS:
 		- git show --stat (shows how many files were changed and the number of line that were added / removed)
 		- git show -p / --patch (default display)
